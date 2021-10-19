@@ -1,0 +1,39 @@
+/*iPhoneおよび共通設定*/
+body {
+  font-family: heisei-maru-gothic-std, sans-serif;
+}
+
+p {
+  font-size: 14px;
+  font-weight: w4;
+  line-height: 18px;
+  color: #483e3e;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+/*iPadの設定*/
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #666;
+  }
+}
+/*PCサイズの設定*/
+@media screen and (min-width: 835px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
